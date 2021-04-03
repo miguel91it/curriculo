@@ -1,0 +1,289 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+
+	\smartdiagram[bubble diagram]{
+        \textbf{Information}\\\textbf{~~~~~Engineering~~~~~},
+        \textbf{Full Stack}\\\textbf{~~~Web Dev~~~},
+        \textbf{Dev}\\\textbf{~~~~~Ops~~~~~},
+        \textbf{Mobile}\\\textbf{~~~~~Dev~~~~~},
+        \textbf{Data}\\\textbf{~~~Analysis~~~},
+        \textbf{Image}\\\textbf{Processing}
+    }
+}
+
+% Programming skill bars
+\programming{{HTML5 $\textbullet$ JS $\textbullet$ CSS / 5}, {Python $\textbullet$ SQL $\textbullet$ Matlab / 5}, {Java $\textbullet$ C $\textbullet$ C++ $\textbullet$ C\# / 4}, {Docker $\textbullet$ NGINX $\textbullet$ AWS / 3}}
+
+% Projects text
+\projects{
+\textbf{Animated Mascot} - Developed a HTML5 and JS-based animated mascot for educational platform \\\\
+        \textbf{Scientific Initiation} - Studied Image Processing with Matlab in a Scientific Initiation Research Program  \\\\
+        \textbf{Lego 2d Printer} - Developed a printing 2d program in Java for a printer built in Lego \\\\
+        \textbf{Scientific Initiation} - Concluded a Scientific Initiation in Data Compression
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{João M. Lima} % Your name
+\cvjobtitle{ Information Engineer\\Graduating } % Job
+% title/career
+
+\cvlinkedin{/in/joaomiguelmoreno}
+\cvgithub{}
+\cvnumberphone{(11) 96700-2399} % Phone number
+%\cvsite{}
+\cvmail{miguel91\_it@hotmail.com} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2016 - 2020}
+        {}
+        {Information Engineer Graduating \textnormal{}}
+        {\href{http://prograd.ufabc.edu.br/cursos/ei}\\{Universidade Federal do ABC, Brazil}}
+        {}
+        {}
+	\twentyitem
+    	{2010 - 2014}
+		{}
+        {Systems Analysis and Development Technologist \textnormal{}}
+        {\href{https://spo.ifsp.edu.br/tads}\\{Instituto Federal de São Paulo, Brazil}}
+        {}
+        {}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2017 -}
+		{2017}
+        {Scientific Initiation in Images Processing}
+        {\href{http://prograd.ufabc.edu.br/}{Universidade Federal do ABC}}
+        {}
+        {
+       	\textbf{Thesis}: Deconvolution in Image Processing\\
+        {\begin{itemize}
+        \item Studied signals processing, Discrete Fourier Transform and Matlab with the goal of applying in the study of image deconvolution techniques
+        \item \textbf{Tools}: Matlab and Linux\\ \vspace{2mm}
+		\end{itemize}}
+        }
+
+	\twentyitem
+    	{2016 -}
+		{2017}
+        {Scientific Initiation in Data Compression}
+        {\href{http://prograd.ufabc.edu.br/}{Universidade Federal do ABC}}
+        {}
+        {
+       	\textbf{Thesis}: Data Compression Techniques for Introduction to Computing \\
+        {\begin{itemize}
+        \item \textbf{Award}: Awarded among the three best scientific initiation projects at the UFABC Scientific Initiation Symposium  {\includegraphics[scale=0.05]{img/trophy.png}} \\
+        \item Explored some data compression algorithms, developed and tested its own python algorithms for each one studied and built a 300 pages of didactic material about work done 
+        \item \textbf{Tools}: Python and Linux \vspace{2mm}
+		\end{itemize}}
+        }
+\end{twenty}
+
+%\section{Publications}
+%L. Antonie, H. Gadgil, G. Grewal, and K. Inwood, “Historical Data Integration - A Study of WWI Canadian Soldiers,” in 2016 IEEE 16th International Conference on Data Mining Workshops (ICDMW), pp. 186-193, IEEE, 2016. \vspace{2mm}
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+%************ Curriculo CABAÇO - Omissao de certos carrgos *****************************
+
+% \begin{comment}
+% \begin{twenty} % Environment for a list with descriptions
+%     \twentyitem
+%         	{Sep 2017 -}
+%     		{Present}
+%             {Web Development Intern}
+%             {\href{}{Universidade Federal do ABC}}
+%             {}
+%             {\begin{itemize}
+%             \item Developing HTML5-based web animation for a distance learning platform
+%             \item Developing a book donation program to the CET (Core of Educational Technologies) department
+%             \item \textbf{Tools}: HTML5 and JS \vspace{2mm}
+%             \end{itemize}}
+%             \\
+%     \end{twenty}
+
+% \begin{twenty} % Environment for a list with descriptions
+% \twentyitem
+%     	{Feb 2017 -}
+% 		{Oct 2017}
+%         {Volunteer Physics Teacher}
+%         {\href{}{Cursinho Saquarema}}
+%         {}
+%         {\begin{itemize}
+%         \item Physics Teacher at the free pre-university course Saquarema
+%         \end{itemize}}
+%         \\
+% \end{twenty}
+
+% \begin{twenty} % Environment for a list with descriptions
+% \twentyitem
+%     	{Feb 2016 -}
+% 		{Oct 2016}
+%         {Volunteer Mathematics Teacher}
+%         {\href{}{Cursinho Emancipa}}
+%         {}
+%         {\begin{itemize}
+%         \item Mathematics Teacher at the free pre-university course Emancipa
+%         \end{itemize}}
+%         \\
+% \end{twenty}
+
+% \begin{twenty} % Environment for a list with descriptions
+% \twentyitem
+%     	{Jan 2011 -}
+% 		{Dec 2014}
+%         {ERP System Developer}
+%         {\href{}{Alcateia Engenharia de Sistemas LTDA}}
+%         {}
+%         {\begin{itemize}
+%         \item Developed an electronic invoices issuing service to the parent company and its subsidiaries
+%         \item Developed improvements in the Financial, Accounting, Commercial and Logistics modules
+%         \item \textbf{Tools}: JS, ASP, T-SQL, .NET, Delphi \vspace{2mm}
+%         \end{itemize}}
+%         \\
+% \end{twenty}
+% \end{comment}
+%************FIM Curriculo CABAÇO - Omissao de certos carrgos *****************************
+
+
+%************ Curriculo COMPLETO  *****************************
+%\begin{comment}
+\begin{twenty} % Environment for a list with description
+\twentyitem
+    	{Apr 2018 -}
+		{Present}
+        {FAPESP TT4 Researcher}
+        {\href{}{RECICLAPAC}}
+        {}
+        {\begin{itemize}
+        \item Developing a system for industrial packaging management (using IOT)
+        \item Implementing and improving (and learning) DevOps practices
+        \item IOT Data Processing and Data Analysis
+        \item \textbf{Tools}: Angular, NodeJs, Mongodb, Docker, AWS, Python, IOT \vspace{2mm}
+        \end{itemize}}
+        
+\end{twenty}
+
+\begin{twenty} % Environment for a list with description
+\twentyitem
+    	{Sep 2017 -}
+		{Present}
+        {Web Developer}
+        {\href{}{Universidade Federal do ABC}}
+        {}
+        {\begin{itemize}
+        \item Developed web animation for a distance learning platform
+        % \item Developing a book donation program to the CET (Core of Educational Technologies) department
+        \item \textbf{Tools}: HTML5 and JS \vspace{2mm}
+        \end{itemize}}
+        
+\end{twenty}
+
+% \begin{twenty} % Environment for a list with descriptions
+% \twentyitem
+%     	{Feb 2016 -}
+% 		{Oct 2017}
+%         {Volunteer Teacher}
+%         {\href{}{}}
+%         {}
+%         {\begin{itemize}
+%         \item Physics Teacher at the free pre-university course Saquarema - 2016
+%         \item Mathematics Teacher at the free pre-university course Emancipa - 2017
+%         \end{itemize}}
+        
+% \end{twenty}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Sep 2013 -}
+		{Dec 2014}
+        {ERP System Developer Coordinator}
+        {\href{}{Alcateia Engenharia de Sistemas LTDA}}
+        {}
+        {\begin{itemize}
+        \item Responsible for developing an electronic invoices issuing service project to the parent company and its subsidiaries (Project Completed)
+        \item Developed improvements in the Financial and Accounting modules
+        \item \textbf{Tools}: JS, ASP, T-SQL, .NET, Delphi \vspace{2mm}
+        \end{itemize}}
+        
+\end{twenty}
+
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Oct 2012 -}
+		{Jul 2013}
+        {Trainee}
+        {\href{}{Ernst \& Young}}
+        {}
+        {\begin{itemize}
+        \item Consultant in process analysis and development
+        \item Worked with data processing, data mining and data migration
+        \end{itemize}}
+        
+\end{twenty}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{Jan 2011 -}
+		{Oct 2012}
+        {ERP System Developer Coordinator}
+        {\href{}{Alcateia Engenharia de Sistemas LTDA}}
+        {}
+        {\begin{itemize}
+        \item Developed improvements in the Human Resources, Logistics and Accounting modules
+        \item \textbf{Tools}: JS, ASP, T-SQL, .NET, Delphi \vspace{2mm}
+        \end{itemize}}
+        
+\end{twenty}
+
+%\end{comment}
+%************ FIM Curriculo COMPLETO  *****************************
+
+
+
+
+\end{document} 
